@@ -1,0 +1,198 @@
+.Dashboard{
+    flex: 0.8;
+    height: 100vh;
+    overflow: auto;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+.DashboardLeft{
+    width: 70%;
+    padding: 30px;
+    height: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: #f4f6fa;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.DashboardHeaderTitle{
+    font-size: 26px;
+    font-weight: 600;
+}
+.DashboardHeaderLargeTitle{
+    font-size: 15px;
+}
+.alertInfo{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: white;
+}
+.dashboardInstruction{
+    margin-left: 40px;
+}
+.DashboardUploadResume{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+.DashboardResumeBlock{
+    width: 67%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.DashboardInputField{
+    display: flex;
+    align-items: center;
+}
+.analyzeAIBtn{
+    font-size: 18px;
+    cursor: pointer;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 700;
+    /* background: linear-gradient(90deg, #fca326, #f94a6b); */
+    background: #1d4a22f7;
+    border-radius: 30px;
+    border: 3px solid rgba(29, 69, 38, 0.81);
+}
+input{
+    display: none;
+}
+.jobDesc{
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.textArea{
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(14, 14, 97);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    border: 5px solid rgba(29, 69, 38, 0.81);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.AnaylzeBtn{
+    width: 100px;
+    height: 50px;
+    border: 3px solid rgba(29, 69, 38, 0.81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    /* background: linear-gradient(90deg, #fca326, #f94a6b); */
+    background: #1d4a22f7;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+.DashboardRight{
+    width: 25%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: #f4f6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.DashboardRightTopCard{
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.DashboardRightTopCard div:first-child{
+    font-size: 22px;
+    font-weight: 700;
+}
+.profileImg{
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    margin: 20px 0;
+}
+
+
+
+@media screen and (max-width:780px){
+    .Dashboard{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .DashboardLeft{
+        width: 100%;
+    }
+    .DashboardHeaderTitle{
+        font-size: 26px;
+    }
+    .DashboardHeaderLargeTitle{
+        font-size: 34px;
+    }
+    .DashboardRight{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .DashboardUploadResume{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .DashboardResumeBlock{
+        width: 100%;
+    }
+    .DashboardInputField{
+        width: 100%;
+    }
+    .label{
+        width: 100%;
+        text-align: center;
+    }
+    .jobDesc{
+        flex-direction: column;
+    }
+    .textArea{
+        width: 100%;
+    }
+    .AnaylzeBtn{
+        border-radius: 30px;
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .DashboardInputField{
+        display: flex;
+        justify-content: center;
+    }
+    .alertInfo{
+        display: none;
+    }
+    .DashboardHeaderLargeTitle{
+        font-size: 18px;
+    }
+
+}

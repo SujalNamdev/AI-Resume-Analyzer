@@ -1,0 +1,104 @@
+.Admin{
+    flex: 0.8;
+    height: 100vh;
+    overflow: hidden;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.AdminBlock{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.AdminBlock::-webkit-scrollbar{
+    display: none;
+}
+
+
+.AdminCard{
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+      height: 280px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease;
+     padding-bottom: 1rem;
+}
+
+
+.AdminCard.expanded{
+    height: 450px;
+}
+
+
+.feedback {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;
+}
+
+
+.feedbackExpanded {
+    display: block;
+    max-height: 230px;
+    overflow-y: auto;
+    padding-right: 8px;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.AdminCard.expanded .feedbackExpanded {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 8px;
+    margin-bottom: 25px;
+}
+.seeMore {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    z-index: 2;
+    border: none;
+    background: whitesmoke;
+    color: rgba(29, 69, 38, 0.81);
+    cursor: pointer;
+    font-weight: 600;
+}
+.feedbackExpanded::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
+    .Admin{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .AdminBlock{
+        grid-template-columns: 1fr;
+    }
+
+    .Admin{
+        padding: 20px;
+    }
+}
