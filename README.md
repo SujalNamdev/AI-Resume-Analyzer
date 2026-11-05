@@ -68,7 +68,7 @@ AI-Resume-Analyzer/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/SujalNamdev/AI-Resume-Analyzer.git
 ```
 
 Navigate into the project directory:
